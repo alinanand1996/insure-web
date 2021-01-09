@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<!--navigation menu-->
+
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active"><span align="left"><img src="images/logo.svg"/>
+			</span></a>
+			  <a href="#PLANS" class="menu">VIEW PLANS</a>
+			  <a href="#ACCOUNT" class="menu">ACCOUNT</a>
+			   <a href="#BLOG" class="menu">BLOG</a>
+			<a href="#WORK" class="menu">HOW WE WORK</a>
+ 
+  <!--hamburger menu-->
+
+  <a href="javascript:void(0)" class="icon" onclick="openNav()">
+	<img src="images/icon-hamburger.svg"></img>
+  </a>
+</div>
+<div class="mobview">
+<img src="images/image-intro-mobile.jpg">
+</div>
+<!--overlay menu-->
+<div id="myNav" class="overlay">
+  <div class="overlaytop"><img src="images/logo.svg"/>
+  <a href="javascript:void(0)"  class="closebtn" onclick="closeNav()">&times;</a>
+  </div>
+  <div class="overlay-content">
+  
+    <a href="#">HOW WE WORK</a>
+    <a href="#">BLOG</a>
+    <a href="#">ACCOUNT</a>
+    <a href="#">VIEW PLANS</a>
+  </div>
+</div>
+<!--introduction-->
+<div class="intro">
+  <h1 class="caption">Humanising <br> your insurance.</h1>
+  <p class="sub-caption">Get your life insurance coverage easier and faster.
+	We blend our expertise and technology to help you find the plan that’s right for you.
+	Ensure you and your loved ones are protected.</p>
+	<button class="btnview">VIEW PLANS</button>
+	
+</div>
+<hr class="bar">
+<!--snappy price people-->
+<div class="midcontainer">
+	<h1 class="midcaption">We're Different.</h1>
+	<div class="spp"><img src="images/icon-snappy-process.svg"></img>
+	<h2 class="midh">Snappy Process</h2><p class="midp"> Our application process can be completed in minutes, not hours.
+	Don’t get stuck filling in tedious forms.<p>
+	</div>
+	<div class="spp"><img src="images/icon-affordable-prices.svg"></img>
+	<h2 class="midh">Affordable Prices</h2><p class="midp"> We don’t want you worrying about high monthly costs.
+	Our prices may be low, but we still offer the best coverage possible.<p>
+	
+	</div>
+	<div class="spp"><img src="images/icon-people-first.svg"></img>
+	<h2 class="midh">People First</h2><p class="midp"> Our plans aren’t full of conditions and clauses to prevent payouts. 
+	We make sure you’re covered when you need it.<p>
+	</div>
+	
+
+</div>
+<!--how we work-->
+<div class="fhw">
+<h2 class="fhwcaption">Find out more about how we work</h2>
+<button>HOW WE WORK</button>
+
+</div>
+
+
+<!--footer-->
+<div class="footer">
+<div class="footertop">
+<img class="footerlogo" src="images/logo.svg"></img>
+<img class="sicon" src="images/icon-instagram.svg"></img>
+<img class="sicon" src="images/icon-pinterest.svg"></img>
+<img class="sicon" src="images/icon-twitter.svg"></img>
+<img class="sicon" src="images/icon-facebook.svg"></img>
+<hr>
+</div><br>
+<div class="subfooter">
+<h5 class="fcaption">Our company</h5>
+<ul>
+  <li><a href="#">How we work</a> </li>
+  <li><a href="#">Why Insure?</a> </li>
+  <li><a href="#">View plans </a></li>
+  <li><a href="#">Reviews</a></li>
+</ul>  
+</div>
+<div class="subfooter">
+<h5 class="fcaption">Help me</h5>
+<ul>
+  <li><a href="#">FAQ </a> </li>
+  <li><a href="#">Terms of use </a> </li>
+  <li><a href="#">Privacy policy  </a></li>
+  <li><a href="#">Cookies</a></li>
+</ul>  
+</div>
+<div class="subfooter">
+<h5 class="fcaption">Contact</h5>
+<ul>
+  <li><a href="#">Sales   </a> </li>
+  <li><a href="#">Support </a> </li>
+  <li><a href="#">Live chat  </a></li>
+</ul> 
+</div>
+<div class="subfooter">
+<h5 class="fcaption">Others</h5>
+<ul>
+  <li><a href="#">Careers  </a> </li>
+  <li><a href="#">Press </a> </li>
+  <li><a href="#">Licenses  </a></li>
+</ul> 
+</div>
+
+</div>
+<!--overlay navigation menu script-->
+<script>
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+</script>
+<!--scroll to top-->
+<script>
+var mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+</body>
+</html>
